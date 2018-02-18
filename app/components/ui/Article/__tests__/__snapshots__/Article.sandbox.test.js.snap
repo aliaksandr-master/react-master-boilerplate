@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render sandbox "default" 1`] = `
+<div>
+  <article
+    className="Article Article--themeDefault Article--sizeDefault"
+  >
+    <h1>
+      Lorem Ipsum
+    </h1>
+    <p>
+      Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+    </p>
+    <p>
+      Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+    </p>
+  </article>
+</div>
+`;

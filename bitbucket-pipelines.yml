@@ -1,0 +1,28 @@
+image: node:8.9.0
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - node
+          - smtmp
+        script:
+          - export TZ=Europe/Minsk
+          - npm run cleanup
+          - npm run ci-lint
+          - npm run ci-unit
+  branches:
+    master:
+      - step:
+          caches:
+            - node
+            - mastertmp
+          script:
+            - export TZ=Europe/Minsk
+            - npm run cleanup
+            - npm run ci-lint
+            - npm run ci-unit
+            - npm run ci-deploy-dev-min
+definitions:
+  caches:
+    mastertmp: ./.tmp

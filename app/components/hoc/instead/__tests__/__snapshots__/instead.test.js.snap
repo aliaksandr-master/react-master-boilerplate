@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render something1 1`] = `<div />`;
+
+exports[`rendering should render something2 1`] = `<noscript />`;
+
+exports[`rendering should render something3 1`] = `<noscript />`;

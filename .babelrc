@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "es2015",
+    "es2016",
+    "es2017",
+    "react",
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-runtime",
+    [ "transform-react-remove-prop-types", { "mode": "wrap" } ],
+    [ "transform-imports", {
+        "lodash": {
+          "transform": "lodash/${member}",
+          "preventFullImport": true
+        }
+      }
+    ]
+  ]
+}

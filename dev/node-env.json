@@ -1,0 +1,6 @@
+{
+  "LOCAL": "local-development",
+  "DEV": "development",
+  "TEST": "testing",
+  "PROD": "production"
+}

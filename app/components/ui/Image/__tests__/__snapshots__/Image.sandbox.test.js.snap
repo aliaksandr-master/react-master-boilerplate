@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render sandbox "default" 1`] = `
+<div>
+  <div
+    className="Image Image--freeTransform"
+  >
+    <div
+      className="Image__in"
+      style={
+        Object {
+          "paddingBottom": "0%",
+        }
+      }
+    >
+      <img
+        className="Image__img"
+        src="/apple-icon-precomposed.png"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`rendering should render sandbox "image_static" 1`] = `
+<div>
+  <div
+    className="Image Image--freeTransform"
+  >
+    <div
+      className="Image__in"
+      style={
+        Object {
+          "paddingBottom": "0%",
+        }
+      }
+    >
+      <img
+        className="Image__img"
+        src="/apple-icon-precomposed.png"
+      />
+    </div>
+  </div>
+</div>
+`;

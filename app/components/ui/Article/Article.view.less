@@ -1,0 +1,32 @@
+@import '../../../lib/mixins.less';
+
+.Article {
+  // ._clearfix();
+}
+
+.Article--sizeDefault {
+  font-size: 14px;
+  line-height: @lh-txt;
+
+  h1 {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  p {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
+
+.Article--themeDefault {
+
+  h1 {
+    font-weight: 500;
+    margin-bottom: @pad*2;
+  }
+
+  p + p {
+    margin-top: @pad*1.5;
+  }
+}

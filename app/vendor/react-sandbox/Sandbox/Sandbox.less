@@ -1,0 +1,63 @@
+.Sandbox {
+  margin: 20px 40px;
+}
+
+.Sandbox__menu {
+  // ._clearfix();
+  text-align: left;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: white;
+  z-index: 999;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-width: 32px;
+  border-right: 1px;
+  box-shadow: 3px 0 3px rgba(0,0,0,0.3);
+  transition: all 300ms ease-in-out;
+  opacity: 0.2;
+
+  &:hover {
+    max-width: 100%;
+    opacity: 1;
+  }
+}
+
+.Sandbox__menuItemH {
+  display: block;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #888;
+  line-height: 1;
+  padding: 4px 0 8px 8px;
+  font-weight: bold;
+  background: #eee;
+}
+
+.Sandbox__menuItem {
+  display: block;
+  border-top: 1px solid #ccc;
+  padding: 4px 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+
+  &:hover {
+    background: #ddd;
+    text-decoration: none;
+  }
+}
+
+.Sandbox__menuItemParent {
+  visibility: hidden;
+}
+
+.Sandbox__menuItem--elementActive {
+  background: #999;
+  color: white;
+}

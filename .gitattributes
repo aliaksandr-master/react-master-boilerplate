@@ -1,0 +1,9 @@
+* text=auto
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.snap binary
+npm-shrinkwrap.json binary
+package-lock.json binary

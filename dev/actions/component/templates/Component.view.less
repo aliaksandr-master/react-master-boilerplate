@@ -1,0 +1,11 @@
+@import '<%= _relPath("app/lib/mixins.less") %>';
+
+.<%= name %> {
+  // ._clearfix();
+}
+<% if (features.theme) {%>
+.<%= name %>--sizeDefault {
+}
+
+.<%= name %>--themeDefault {
+}<% } %>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chess Art</title>
+
+  <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
+  <meta itemprop="image" content="/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic,cyrillic-ext,latin-ext" />-->
+</head>
+<body>
+  <div id="sm-loader" class="-animation">
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+    <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+
+      .spinner {
+        -webkit-animation: rotator 1.4s linear infinite;
+        animation: rotator 1.4s linear infinite;
+      }
+
+      @-webkit-keyframes rotator {
+        0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
+      }
+
+      @keyframes rotator {
+        0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
+      }
+      .path {
+        stroke-dasharray: 187;
+        stroke-dashoffset: 0;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        stroke: #4285F4;
+        -webkit-animation: dash 1.4s ease-in-out infinite;
+        animation: dash 1.4s ease-in-out infinite;
+      }
+
+      @-webkit-keyframes dash {
+        0% { stroke-dashoffset: 187; }
+        50% { stroke-dashoffset: 46.75; -webkit-transform: rotate(135deg); transform: rotate(135deg); }
+        100% { stroke-dashoffset: 187; -webkit-transform: rotate(450deg); transform: rotate(450deg); }
+      }
+
+      @keyframes dash {
+        0% { stroke-dashoffset: 187; }
+        50% { stroke-dashoffset: 46.75; -webkit-transform: rotate(135deg); transform: rotate(135deg); }
+        100% { stroke-dashoffset: 187; -webkit-transform: rotate(450deg); transform: rotate(450deg); }
+      }
+    </style>
+  </div>
+  <script>
+    window.stockfish = new Worker('/vendor/stockfish/lib/stockfish.js');
+  </script>
+  <script>
+    window.CONFIG = {
+      HISTORY: true,
+      LOGGER: {%config.RUNTIME_LOGGER%},
+      API_URL: '{%config.MOCK_PROXY_URL%}',
+      BASE_URL: '/-index-main-',
+      STATIC_URL: '/'
+    };
+  </script>
+  <script defer src="/common.js"></script>
+  <script defer src="/index-main.js"></script>
+  <script async defer src="/dev-menu.js"></script>
+</body>
+</html>

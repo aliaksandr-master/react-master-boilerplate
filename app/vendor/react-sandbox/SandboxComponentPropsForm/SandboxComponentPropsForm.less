@@ -1,0 +1,79 @@
+.SandboxComponentPropsForm {
+}
+
+.SandboxComponentPropsForm__textarea {
+  display: block;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  color: inherit;
+  font-size: 12px;
+  font-family: monospace, sans-serif;
+  outline: none;
+  padding: 8px;
+  max-width: 100%;
+  width: 100%;
+  transition: border-color 0.2s ease-in-out;
+  margin: 0 0 8px;
+
+  &:focus {
+    border-color: #d5d5d5;
+    outline: none;
+  }
+
+  &:read-only,
+  &:disabled {
+    color: #78878f;
+    background-color: #f5f9fa;
+  }
+}
+
+.SandboxComponentPropsForm__fieldError {
+  color: #d85030;
+}
+
+.SandboxComponentPropsForm__submit {
+  -webkit-appearance: none; /* stylelint-disable-line */
+  margin: 0;
+  border: none;
+  font: inherit;
+  text-transform: none;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  min-width: 100px;
+  line-height: 1.2;
+  min-height: 44px;
+  padding: 0 3*4px;
+  font-size: 14px;
+  border-radius: 3px;
+  background-color: #00accb;
+  color: #fff;
+
+  &::-moz-focus-inner {
+    border: none;
+    padding: 0;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+    background-color: #00c7e4;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: #00c7e4;
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: default;
+    background-color: #f5f5f5;
+    color: #999;
+  }
+}

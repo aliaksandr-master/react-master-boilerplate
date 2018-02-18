@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render sandbox "default" 1`] = `
+<div
+  className="ChartProgress ChartProgress--themeDefault"
+>
+  <div
+    className="ChartProgress__progress"
+    style={
+      Object {
+        "background": "red",
+        "height": 12,
+        "width": "20%",
+      }
+    }
+  >
+    0.2
+  </div>
+</div>
+`;
+
+exports[`rendering should render sandbox "over" 1`] = `
+<div
+  className="ChartProgress ChartProgress--themeDefault"
+>
+  <div
+    className="ChartProgress__progress"
+    style={
+      Object {
+        "background": "red",
+        "height": 12,
+        "width": "100%",
+      }
+    }
+  >
+    1
+  </div>
+</div>
+`;

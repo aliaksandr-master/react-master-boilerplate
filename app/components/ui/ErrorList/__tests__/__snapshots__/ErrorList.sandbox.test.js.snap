@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render sandbox "default" 1`] = `
+<div>
+  <div
+    className="ErrorList ErrorList--themeDefault ErrorList--sizeDefault"
+  >
+    <div
+      className="ErrorListValidation"
+    >
+      Hello World : First Error!
+    </div>
+    <div
+      className="ErrorListValidation"
+    >
+      Foo : Error 2!
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actionCreators auto-init actionCreator cleanLoadingErrorActionCreator 1`] = `
+Object {
+  "active": Array [],
+  "error": null,
+  "loadedOnce": false,
+}
+`;
+
+exports[`actionCreators auto-init actionCreator decrementActionCreator 1`] = `
+Object {
+  "active": Array [],
+  "error": null,
+  "loadedOnce": false,
+}
+`;
+
+exports[`actionCreators auto-init actionCreator errorLoadingActionCreator 1`] = `
+Object {
+  "payload": Object {
+    "result": "some",
+    "status": 200,
+  },
+  "type": "@@loading/ERROR_LOADING",
+}
+`;
+
+exports[`actionCreators auto-init actionCreator incrementActionCreator 1`] = `
+Object {
+  "active": Array [
+    undefined,
+  ],
+  "error": null,
+  "loadedOnce": false,
+}
+`;

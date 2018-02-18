@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`route app.dashboard attach 1`] = `
+Object {
+  "createChildRoute": [Function],
+}
+`;

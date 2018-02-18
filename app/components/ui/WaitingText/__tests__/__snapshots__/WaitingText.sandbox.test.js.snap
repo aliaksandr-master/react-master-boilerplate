@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render sandbox "block" 1`] = `
+<span
+  className="WaitingText WaitingText--themeBlock"
+  style={
+    Object {
+      "height": 300,
+    }
+  }
+>
+  <span
+    className="WaitingText__in"
+  >
+    <span
+      className="WaitingText__text"
+    >
+      Loading
+    </span>
+    <span
+      className="WaitingText__dot"
+    />
+    <span
+      className="WaitingText__dot"
+    />
+    <span
+      className="WaitingText__dot"
+    />
+  </span>
+</span>
+`;
+
+exports[`rendering should render sandbox "default" 1`] = `
+<span
+  className="WaitingText"
+  style={
+    Object {
+      "height": undefined,
+    }
+  }
+>
+  <span
+    className="WaitingText__in"
+  >
+    <span
+      className="WaitingText__text"
+    >
+      Loading
+    </span>
+    <span
+      className="WaitingText__dot"
+    />
+    <span
+      className="WaitingText__dot"
+    />
+    <span
+      className="WaitingText__dot"
+    />
+  </span>
+</span>
+`;

@@ -1,0 +1,124 @@
+// gulp-check-class-names: exclude no-invalid-component-name-in-classes-styles: ["ReactModal", "ReactModalPortal"]
+@import '../../../lib/mixins.less';
+
+@Modal__close--fz: 32px;
+@Modal__close--size: 34px;
+@Modal__close-big--fz: 56px;
+@Modal--bg: rgba(24, 47, 59, 0.9);
+
+.ReactModal__Body--open { // stylelint-disable-line selector-class-pattern
+}
+
+.ReactModalPortal {
+  display: block;
+  z-index: @z-modal;
+  font-size: 0;
+  line-height: 0;
+}
+
+.ReactModal__Overlay { // stylelint-disable-line selector-class-pattern
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.2s ease-out;
+  touch-action: cross-slide-y pinch-zoom double-tap-zoom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ReactModal__Overlay--after-open { // stylelint-disable-line selector-class-pattern
+  background-color: @Modal--bg;
+}
+
+.ReactModal__Overlay--before-close { // stylelint-disable-line selector-class-pattern
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.ReactModal__Content { // stylelint-disable-line selector-class-pattern
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  margin: @pad*8 auto;
+  max-width: 100%;
+  opacity: 0;
+  transform: translateY(-100px);
+  background: white;
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: @screen-xs-max) {
+    margin: @pad*2 auto;
+  }
+
+  .ReactModal__Overlay--after-open & { // stylelint-disable-line selector-class-pattern
+    opacity: 1;
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+    transform: translateY(0);
+  }
+
+  .ReactModal__Overlay--before-close & { // stylelint-disable-line selector-class-pattern
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  }
+}
+
+.Modal__in {
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: @fz-txt;
+  line-height: 1.2;
+}
+
+.Modal {
+
+}
+
+//.ReactModal__Content--after-open {
+//
+//}
+
+.Modal__close {
+  ._reset-button();
+  font-size: @Modal__close--fz;
+  font-weight: normal;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: @Modal__close--size;
+  height: @Modal__close--size;
+  line-height: @Modal__close--size;
+  text-align: center;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: @color-muted;
+  z-index: 2;
+  opacity: 0;
+
+  &:focus,
+  &:hover {
+    color: @color-primary;
+  }
+
+  .ReactModal__Overlay--after-open & { // stylelint-disable-line selector-class-pattern
+    opacity: 1;
+  }
+
+  .ReactModal__Overlay--before-close & { // stylelint-disable-line selector-class-pattern
+    opacity: 0;
+  }
+}

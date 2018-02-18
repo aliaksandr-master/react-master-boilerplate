@@ -1,0 +1,105 @@
+@import '../../../lib/mixins.less';
+
+.WaitingText {
+}
+
+.WaitingText--themeDefault {
+}
+
+.WaitingText--themeBlock {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.WaitingText__in {
+  .WaitingText--themeBlock & {
+    display: block;
+  }
+}
+
+.WaitingText__dot {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: WaitingText__dot-0;
+
+  &::before {
+    content: '.';
+  }
+}
+
+.WaitingText__dot + .WaitingText__dot {
+  animation-name: WaitingText__dot-1;
+}
+
+.WaitingText__dot + .WaitingText__dot + .WaitingText__dot {
+  animation-name: WaitingText__dot-2;
+}
+
+@keyframes WaitingText__dot-0 {
+  0% { opacity: 0; } // 0
+
+  16% { opacity: 0; } // 1
+  16.6% { opacity: 1; }
+
+  33% { opacity: 1; } // 2
+  33.3% { opacity: 1; }
+
+  49.5% { opacity: 1; } // 3
+  50% { opacity: 1; }
+
+  66% { opacity: 1; } // 4
+  66.6% { opacity: 1; }
+
+  83% { opacity: 1; } // 5
+  83.6% { opacity: 1; }
+
+  99.5% { opacity: 1; } // 0
+  100% { opacity: 0; }
+}
+
+@keyframes WaitingText__dot-1 {
+  0% { opacity: 0; } // 0
+
+  16% { opacity: 0; } // 1
+  16.6% { opacity: 0; }
+
+  33% { opacity: 0; } // 2
+  33.3% { opacity: 1; }
+
+  49.5% { opacity: 1; } // 3
+  50% { opacity: 1; }
+
+  66% { opacity: 1; } // 4
+  66.6% { opacity: 1; }
+
+  83% { opacity: 1; } // 5
+  83.6% { opacity: 0; }
+
+  99.5% { opacity: 0; } // 0
+  100% { opacity: 0; }
+}
+
+@keyframes WaitingText__dot-2 {
+  0% { opacity: 0; } // 0
+
+  16% { opacity: 0; } // 1
+  16.6% { opacity: 0; }
+
+  33% { opacity: 0; } // 2
+  33.3% { opacity: 0; }
+
+  49.5% { opacity: 0; } // 3
+  50% { opacity: 1; }
+
+  66% { opacity: 1; } // 4
+  66.6% { opacity: 0; }
+
+  83% { opacity: 0; } // 5
+  83.6% { opacity: 0; }
+
+  99.5% { opacity: 0; } // 0
+  100% { opacity: 0; }
+}

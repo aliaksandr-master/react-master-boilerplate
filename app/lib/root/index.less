@@ -1,0 +1,13 @@
+@import '../mixins';
+
+&.ReactModal__Body--open { // stylelint-disable-line selector-class-pattern
+  #react-root { /* lesshint idSelector: false */ // stylelint-disable-line selector-max-id
+    position: fixed;
+    width: 100%;
+  }
+}
+
+#react-root { /* lesshint idSelector: false */ // stylelint-disable-line selector-max-id
+  height: 100%;
+  min-height: 100%;
+}

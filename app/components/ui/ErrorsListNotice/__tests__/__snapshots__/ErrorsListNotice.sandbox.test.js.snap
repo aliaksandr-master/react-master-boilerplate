@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render sandbox "default" 1`] = `
+<div>
+  <div
+    className="ErrorsListNotice ErrorsListNotice--themeDefault ErrorsListNotice--sizeDefault"
+  >
+    <div
+      className="ErrorsListNotice__item"
+    >
+      hello!
+    </div>
+  </div>
+</div>
+`;

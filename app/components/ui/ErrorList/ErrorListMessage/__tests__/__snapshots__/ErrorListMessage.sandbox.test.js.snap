@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render sandbox "default" 1`] = `
+<div>
+  <div
+    className="ErrorListMessage"
+  >
+    Something went wrong
+  </div>
+</div>
+`;

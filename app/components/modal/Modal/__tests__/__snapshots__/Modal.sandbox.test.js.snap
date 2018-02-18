@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render sandbox "default" 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    Show Modal
+  </button>
+  <div>
+    <h1>
+      REACT_MODAL
+    </h1>
+    <p>
+      {
+    "className": "Modal Modal--theme-default",
+    "closeTimeoutMS": 210,
+    "isOpen": true,
+    "shouldCloseOnOverlayClick": true,
+    "contentLabel": "Modal"
+}
+    </p>
+    <div>
+      <button
+        className="Modal__close"
+        onClick={[Function]}
+        type="button"
+      >
+        ×
+      </button>
+      <div
+        className="Modal__in"
+        style={
+          Object {
+            "width": 500,
+          }
+        }
+      >
+        Hello world
+      </div>
+    </div>
+  </div>
+</div>
+`;
