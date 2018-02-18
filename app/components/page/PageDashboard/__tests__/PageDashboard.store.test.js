@@ -1,8 +1,6 @@
 /* eslint-env browser, jest */
 
-import forEach from 'lodash/forEach';
 import reducer from '../PageDashboard.store';
-import { DASHBOARD } from '../../../../config/dashboard';
 
 
 

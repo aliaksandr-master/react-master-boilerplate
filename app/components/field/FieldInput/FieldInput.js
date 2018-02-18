@@ -10,6 +10,7 @@ export default compose(
   setPropTypes({
     value: PropTypes.oneOfType([ PropTypes.number, PropTypes.string ]),
     onClick: PropTypes.func,
+    onChange: PropTypes.func,
     onKeyPress: PropTypes.func,
     onEnterPress: PropTypes.func,
     onEscapePress: PropTypes.func
@@ -21,6 +22,9 @@ export default compose(
     id: id == null ? `f${Date.now()}` : id
   })),
   withHandlers({
+    onChange: ({ onChange }) => (ev) => {
+      onChange(ev.target.value);
+    },
     onClick: ({ onClick }) => (ev) => {
       ev.target.select();
       if (onClick) {

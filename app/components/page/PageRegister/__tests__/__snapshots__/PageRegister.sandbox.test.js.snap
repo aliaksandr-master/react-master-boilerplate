@@ -51,7 +51,7 @@ exports[`rendering should render sandbox "default" 1`] = `
           >
             <input
               disabled={false}
-              id="username-undefined-undefined-44720"
+              id="f1485955293000"
               name="username"
               onBlur={[Function]}
               onChange={[Function]}
@@ -150,7 +150,7 @@ exports[`rendering should render sandbox "default" 1`] = `
           >
             <input
               disabled={false}
-              id="email-undefined-undefined-38501"
+              id="f1485955293000"
               name="email"
               onBlur={[Function]}
               onChange={[Function]}
@@ -249,7 +249,7 @@ exports[`rendering should render sandbox "default" 1`] = `
           >
             <input
               disabled={false}
-              id="password-undefined-undefined-39176"
+              id="f1485955293000"
               name="password"
               onBlur={[Function]}
               onChange={[Function]}
@@ -348,7 +348,7 @@ exports[`rendering should render sandbox "default" 1`] = `
           >
             <input
               disabled={false}
-              id="confirm-undefined-undefined-11561"
+              id="f1485955293000"
               name="confirm"
               onBlur={[Function]}
               onChange={[Function]}

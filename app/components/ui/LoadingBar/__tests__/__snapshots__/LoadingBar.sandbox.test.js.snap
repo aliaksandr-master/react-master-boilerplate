@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering should render sandbox "default" 1`] = `
+<div>
+  <div>
+    <pre>
+      {"style":{"position":"fixed","display":"none","top":0,"left":0,"right":0,"height":10,"zIndex":9999,"boxShadow":"0 0 3px rgba(0,0,0,0.25)"},"mode":"indeterminate"}
+    </pre>
+    <div />
+  </div>
+</div>
+`;

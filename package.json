@@ -259,6 +259,7 @@
       "\\.(css|less)$": "identity-obj-proxy",
       "react-highcharts": "<rootDir>/dev/jest-mocks/react-highcharts.jsx",
       "react-modal": "<rootDir>/dev/jest-mocks/react-modal.jsx",
+      "material-ui/LinearProgress": "<rootDir>/dev/jest-mocks/react-component.js",
       "clipboard/dist/clipboard": "<rootDir>/dev/jest-mocks/clipboard.js",
       "react-dropzone": "<rootDir>/dev/jest-mocks/react-dropzone.js"
     },
