@@ -25,7 +25,7 @@
   "globals": {
     "__SENTRY_DSN__": null,
     "__ASSERTS_ENABLED__": true,
-    "ADS_CONFIG": {
+    "CONFIG": {
       "API_URL": "http://jest.test/",
       "BASE_URL": "/",
       "STATIC_URL": "/",
