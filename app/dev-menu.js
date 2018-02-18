@@ -8,7 +8,7 @@ setTimeout(() => {
         <a href="/">Home</a>
         <a href="/-index-main-/app">Main</a>
         <a href="/-index-main-/sandbox">Sandbox</a>
-        <a id="dev-menu-mocking-proxy" href="/-mock-proxy-/">Mocking Proxy</a>
+        <!--<a id="dev-menu-mocking-proxy" href="/-mock-proxy-/">Mocking Proxy</a>-->
         <a href="/-coverage-/">Coverage</a>
         <a href="/-images-/">Images</a>
       </div>
@@ -25,14 +25,13 @@ setTimeout(() => {
           overflow: hidden;
           max-width: 6px;
           box-sizing: border-box;
-          transition: max-width 0.3s ease-in-out, right 0.3s ease-in-out;
+          transition: max-width 0.3s ease-in-out;
           width: 150px;
-          right: -140px;
+          right: 0;
         }
   
         #dev-menu:hover {
           max-width: 1000px;
-          right: 0;
         }
 
         #dev-menu__in {
